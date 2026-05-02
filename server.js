@@ -10,7 +10,7 @@ const io = new Server(server, {
   pingInterval: 25000,
 });
 
-const RELAY_SECRET = process.env.RELAY_SECRET || 'safelock-secret-muda-isto-2024';
+const RELAY_SECRET = process.env.RELAY_SECRET || 'admin123';
 const PORT = process.env.PORT || 3000;
 
 // Estado: um admin, um agent (por clientId)

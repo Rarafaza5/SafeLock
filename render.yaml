@@ -8,7 +8,7 @@ services:
     envVars:
       - key: RELAY_SECRET
         generateValue: false
-        value: safelock-secret-muda-isto-2024
+        value: admin123
       - key: NODE_ENV
         value: production
     healthCheckPath: /

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: safelock-relay
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: RELAY_SECRET
+        generateValue: false
+        value: safelock-secret-muda-isto-2024
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /
